@@ -1,382 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-    
 }
 
 body {
+    background-color: #ebebeb;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #eee; */
-    font-weight: 300;
 }
 
-/* #parent {
-    position: relative;
-    width: 100%;
-}
-
-.nav-bars {
-    position: absolute;
-}
-
-#parent img {
-    position: absolute;
-    max-width: 100px;
-    left: 75px;
-    top: 25px;
-    z-index: 999;
-} */
-
-
-
-.navbar__top {
-    background-color: #22263d;
-    columns: #fff;
-}
-
-/* hero */
-.hero_banner {
-    width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/sion_hall.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.hero_content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.content {
-    text-align: center;
-    color: #fff;
-    padding: 2em 2em 2em 0;
-    /* margin: 5em 5em 5em 0; */
-}
-
-.content h1 {
-    font-size: 4.5rem;
-    padding-top: 2rem 0;
-    font-weight: 400;
-    margin: 1em 0 0 0;
-}
-
-.content p {
-    font-size: 1.5rem ;
-    padding-bottom: 10px ;
-    /* margin: 0 0 10px 0; */
-}
-
-.btn {
-    border: none;
-    outline: none;
-    padding:  10px 60px;
-    /* margin-top: 100px; */
-    border-radius: 5px;
-    color: #000;
-    font-size: 15px;
-    cursor: pointer;
-    background: #fff;
-    /* margin-bottom: 3em; */
-    
-}
-
-a,
-a:hover {
+li, a {
     text-decoration: none;
-    color: #22263d;
-    
+    color: white;
 }
 
-
-strong {
-    font-weight: 300;
-    font-size: 4.5rem;
-}
-
-
-/* hero end */
-
-
-.university-news__banner {
-    width: 100%;
-    height: 15vh;
-    background: #22263d;
-}
-
-.news-content {
-    height: 100%;
+.nav__container {
+    max-width: 1100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-
-
-.n-content {
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1em;
-    /* padding: 2em; */
-    /* margin: 5em; */
-    
-}
-
-.main-content {
-    width: 100%;
-    min-height: 100vh;
-    /* background-color: steelblue; */
-    background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url(./img/corsham_court.jpeg);
-    /* background: no-repeat center; */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.container-xl {
-    background: transparent;
-}
-
-/* yt flexbox tutorial */
-section{
-    padding: 5em;
-    max-height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: none;
-    /* background-color: steelblue; */
-}
-
-section h2{
-    padding: 0;
-    margin: 0 0 0 10px;
-    font-size: 2em;
-}
-
-.about-container {
-    width: 100%;
-    max-width: 1320px;
+    height: 10Vh;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.about-img__left {
-    width: 130%;
-    height: 500px;
-    background: url(./img/newton_hall.jpg) no-repeat center / cover; 
-    /* border-radius: 8px; */
-    /* border: 1px solid; */
-    padding: 10px;
-    box-shadow: -20px -20px; color:rgba(34, 38, 61, 0.97);
+header{
+    background-color: #d81e5b;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.about-img__right {
-    width: 130%;
-    height: 500px;
-    background: url(./img/corsham_court.jpeg) no-repeat center / cover; 
-    /* border-radius: 8px; */
-    /* border: 1px solid; */
-    padding: 10px;
-    box-shadow: 20px -20px; color:rgba(34, 38, 61, 0.97);
+.nav__links {
+    list-style: none;
 }
 
-.about-text__right {
-    width: 120%;
-    min-height: 375px;
-    background-color: rgba(34, 38, 61, 0.97);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    /* border-radius: 8px; */
-    color: #fff;
-    margin-left: -170px;
-}
-
-.about-text__left {
-    width: 120%;
-    min-height: 375px;
-    background-color: rgba(255, 255, 255, 0.97);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    /* border-radius: 8px; */
-    color: #22263d;
-    margin-right: -170;
-    z-index: 999;
-}
-
-span {
-    padding: 0;
-    margin: 0;
+.nav__links li {
     display: inline-block;
-    float: left;
-    height: 40px;
-    width: 2px;
-    background-color: #ab0743; 
+    padding: 0 20px;
 }
 
-/* cards typography */
-
-.about-text__right p {
-    margin: 40px 0;
-    display: inline-block;
-    float: right;
-    line-height: 1.6;
+button {
+    padding: 9px 25px;
+    background-color: rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), alpha);
+    border: none;
+    border-radius: 50px;
 }
 
-.about-text__left p {
-    margin: 40px 0;
-    display: inline-block;
-    float: right;
-    line-height: 1.6;
-}
+/* nav styles */
 
 
-/* buttons */
-
-/* .about-text__right a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #fff;
-    color: #000;
-    padding: 15px 50px;
-    display: inline-block;
-    letter-spacing: 2px;
-
-}
-
-.about-text__left a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #fff;
-    color: #000;
-    padding: 15px 50px;
-    display: inline-block;
-    letter-spacing: 2px;
-
-} */
-
-
-
-/* flexbox yt tutorial end */
-
-
-/* about rak customizations  */
-
-.rak-hero_banner {
-    width: 100%;
+.hero__container{
+    max-width: 1100px;
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/hero-rak.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    display: block;
-}
-
-
-.rak-main-content {
-    width: 100%;
-    min-height: 100vh;
-    /* background-color: steelblue; */
-    background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url(./img/rak-students.jpg);
-    /* background: no-repeat center; */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-
-
-.rak-about-img__left {
-    width: 130%;
-    height: 500px;
-    background: url(./img/rak-students.jpg) no-repeat center / cover; 
-    /* border-radius: 8px; */
-    /* border: 1px solid; */
-    padding: 10px;
-    box-shadow: -20px -20px; color:rgba(34, 38, 61, 0.97);
-}
-
-.rak-about-img__right {
-    width: 130%;
-    height: 500px;
-    background: url(./img/rak-campus.jpg) no-repeat center / cover; 
-    /* border-radius: 8px; */
-    /* border: 1px solid; */
-    padding: 10px;
-    box-shadow: 20px -20px; color:rgba(34, 38, 61, 0.97);
-}
-
-
-
-/* vision */
-
-.vision-section {
-    width: 100%;
-    min-height: 75vh;
-    /* background-color: steelblue; */
-    background: linear-gradient(rgba(34, 38, 61, 0.80), rgba(34, 38, 61, 0.80)), url(./img/sion_hall.jpg);
-    /* background: no-repeat center; */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
-
-
-
-.mission-vision-content {
-    text-align: center;
-    color: #fff;
-    padding: 2em 2em 2em 0;
-    width: 75ch;
-    line-height: 1.6;
-}
- 
-
-
-/* our leaders */
-
-.card-content {
-    width: 100%;
-    background-color: #22263d;
-    color: #fff;
-
+.hero__container h3 {
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
-
-.card-img{
-    width: 100%;
-    height: 100px;
-    background: url(./img/rak-campus.jpg) no-repeat center / cover;
+.hero__container p {
+    font-size: 1em;
+    font-weight: 200;
 }
 
-.leader-description {
-    margin: 10px 0;
-    display: inline-block;
-    float: right;
-    line-height: 1.6;
+.hero__container h1 {
+    font-size: 4em;
+    font-weight: 400;
 }
