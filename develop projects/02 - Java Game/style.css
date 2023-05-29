@@ -1,0 +1,130 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Darumadrop One', cursive;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7ffff;
+}
+
+.wrapper {
+    position: fixed;
+    top: 8em;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+    color: #2f2f2f;
+}
+
+::selection {
+  color: #fff;
+  background-color: #7d2ae8;
+}
+.container {
+  padding: 2rem 7rem;
+  border-radius: 50px;
+  background: #2f2f2f;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.result_images {
+  display: flex;
+  column-gap: 7rem;
+}
+.container.start .user_result {
+  transform-origin: left;
+  animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.container.start .cpu_result {
+  transform-origin: right;
+  animation: cpuShake 0.7s ease infinite;
+}
+@keyframes cpuShake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.result_images img {
+  width: 100px;
+}
+
+
+.result {
+  text-align: center;
+  font-size: 2rem;
+  color: #e4e4e4;
+  margin-top: 1.5rem;
+}
+
+.option_image img {
+  width: 50px;
+}
+.option_images {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+.container.start .option_images {
+  pointer-events: none;
+}
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover {
+  opacity: 1;
+}
+
+.option_image.active {
+  opacity: 1;
+}
+
+.option_image img {
+  pointer-events: none;
+}
+
+.option_image p {
+  color: #e4e4e4;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+
+    color: #e4e4e4;
+}
+.score h1 {
+    color: #e4e4e4;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.score #score {
+    color: #e4e4e4;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
