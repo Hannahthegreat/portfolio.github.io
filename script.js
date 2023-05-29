@@ -1,8 +1,8 @@
 let paths = document.querySelectorAll('path'),
-rect = document.querySelectorAll('rect');
+lines = document.querySelectorAll('line');
 
 fillSvgPath()
-
+fillSvgLine()
 document.addEventListener('scroll', fillSvgPath)
 
 function fillSvgPath() {
@@ -19,5 +19,21 @@ function fillSvgPath() {
         let drawLength = pathLength * scrollPercentage;
 
         path.style.strokeDashoffset = pathLength - drawLength;
+    }
+}
+function fillSvgLine() {
+    let scrollPercentage = (document.documentElement.scrollTop +document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+    for (var i = 0; i < lines.length; i++ ) {
+        let line = lines[i];
+        
+        let lineLength = line.getTotalLength();
+
+        line.style.strokeDasharray = lineLength;
+        line.style.strokeDashoffset = lineLength;
+
+        let drawLength = lineLength * scrollPercentage;
+
+        line.style.strokeDashoffset = lineLength - drawLength;
     }
 }
