@@ -4,6 +4,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 :root {
@@ -276,7 +281,26 @@ footer {
     padding: 20px 0px;
 }
 
+.portfolio__container{
+    width: 70%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border: solid 2px;
+    border-radius: 50px;
+}
 
+.portfolio__container img {
+    max-width: 100%;
+}
 
+.portfolio__container img:nth-child(1){
+    border-radius: 50px 50px 0 0;
+}
 
-
+.portfolio__container img:nth-child(19){
+    border-radius: 0 0 50px 50px;
+}
