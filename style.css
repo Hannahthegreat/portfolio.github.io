@@ -27,7 +27,8 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1400px ;
+    padding: 20px 0;
+    max-width: 1400px;
 }
 
 
@@ -84,6 +85,8 @@ button {
     height: 5px solid var(--secondary-color);
     width: 100%;
     display: block;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* hero section */
@@ -163,11 +166,11 @@ button {
 
 }
 
-.overlay button {
+.tags {
     margin: 0;
     position: absolute;
     top: 4%;
-    left: 2%;
+    left: 1%;
 }
 
 .overlay {
