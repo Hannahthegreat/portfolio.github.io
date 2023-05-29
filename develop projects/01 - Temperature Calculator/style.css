@@ -1,0 +1,104 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #222;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+}
+
+
+.title {
+    font-size: 3em;
+    margin-bottom: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    min-width: 20em;
+    height: 13em;
+
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(133, 133, 133, 0.25) 0px 10px 40px -20px, rgba(255, 255, 255, 0.3) 0px 30px 30px -30px, rgba(180, 180, 180, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+.card:nth-child(1):hover {
+    background-color: #ff4f4f;
+}
+.card:nth-child(2):hover {
+    background-color: #4fbeff;
+}
+.card:nth-child(3):hover {
+    background-color: #60ffa7;
+}
+
+
+.bg-unit {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #ececec;
+    font-size: 10em;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.card h2, .card input {
+    position: relative;
+}
+
+.card h2 {
+    color: #222;
+    text-align: left;
+    padding-left: 1em;
+}
+
+
+.card input::-webkit-outer-spin-button,
+.card input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card input {
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #292929;
+}
+
+.card input:focus {
+    outline: none;
+}
