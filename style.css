@@ -19,6 +19,35 @@ body::-webkit-scrollbar{
 
 }
 
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    z-index: 99;
+    animation: loading 0.75s ease infinite;
+
+    @keyframes loading {
+        form {transform: rotate(0turn);}
+        to {transform: rotate(1turn);}
+    }
+}
+
+.loader::after {
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid var(--primary-color);
+    border-top-color:var(--secondary-color) ;
+    border-radius: 50%;
+}
+
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -350,11 +379,41 @@ video {
 
 /* svg animayions------------------------------------------------------------------------------- */
 
-svg {
-    width: 400%;
+#svg__pen{
+    width: 40%;
     position: fixed;
-    bottom: 2%;
-    left: -115%;
-    z-index: 9999;
+    bottom: 3%;
+    left: 70%;
     opacity: 20%;
+    fill: none;
+    z-index: -1;
+}
+
+#vect_pen{
+    stroke: var(--accent-color);
+}
+
+
+#svg__keycap{
+    width: 40%;
+    position: fixed;
+    bottom: -5%;
+    left: 65%;
+    opacity: 20%;
+    fill: none;
+    z-index: -1;
+}
+
+#svg__clapper{
+    width: 40%;
+    position: fixed;
+    bottom: -10%;
+    left: 0%;
+    opacity: 20%;
+    fill: none;
+    z-index: -1;
+}
+
+svg path{
+    transition: stroke-dashoffset 1s ease;
 }
