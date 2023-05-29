@@ -291,7 +291,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 30px 0;
     border: solid 2px;
     border-radius: 50px;
 }
@@ -344,4 +344,17 @@ video {
 .showreel__about p{
     padding-bottom: 20px;
     line-height: 1.6;
+}
+
+
+
+/* svg animayions------------------------------------------------------------------------------- */
+
+svg {
+    width: 400%;
+    position: fixed;
+    bottom: 2%;
+    left: -115%;
+    z-index: 9999;
+    opacity: 20%;
 }
