@@ -1,14 +1,10 @@
-<svg width="500" height="436" viewBox="0 0 500 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Pen" clip-path="url(#clip0_23_6)">
-<g id="pen">
-<path id="Polygon 2" d="M102.733 352.967L126.513 265.022C129.025 255.733 140.65 252.646 147.439 259.466L211.712 324.032C218.5 330.852 215.361 342.463 206.06 344.932L118.008 368.311C108.708 370.781 100.222 362.256 102.733 352.967Z" stroke="#EBEBEB" stroke-width="5"/>
-<rect id="Rectangle 8" x="350.539" y="39.9605" width="115.638" height="274.661" rx="12.5" transform="rotate(45.1305 350.539 39.9605)" stroke="#EBEBEB" stroke-width="5"/>
-<path id="Vector 2" d="M175.389 253.351L338.613 90.8695L369.562 121.96L206.338 284.441L227.616 305.816L390.839 143.334L400.511 153.05" stroke="#EBEBEB" stroke-width="5" stroke-linejoin="round"/>
-</g>
+<path id="Vector 5" d="M186.513 597.726C186.513 597.726 312.554 799.201 387.65 798.863C462.746 798.526 897.866 324.246 940.832 245.681C983.799 167.115 793.432 22.8462 739.696 44.5437C685.959 66.2412 174 537 186.513 597.726ZM186.513 597.726L127.932 757.017M127.932 757.017C127.932 757.017 55.5401 893.954 71.8004 926.928C88.0607 959.903 235.644 878.382 235.644 878.382C166.745 862.754 136.14 816.377 127.932 757.017Z" stroke="#EBEBEB" stroke-width="10" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_23_6">
-<rect width="500" height="436" fill="white"/>
+<rect width="1000" height="1000" fill="white"/>
 </clipPath>
 </defs>
 </svg>
