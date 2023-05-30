@@ -20,34 +20,6 @@ body::-webkit-scrollbar{
 }
 
 
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--accent-color);
-    z-index: 99;
-    animation: loading 0.75s ease infinite;
-
-    @keyframes loading {
-        form {transform: rotate(0turn);}
-        to {transform: rotate(1turn);}
-    }
-}
-
-.loader::after {
-    content: '';
-    width: 75px;
-    height: 75px;
-    border: 15px solid var(--primary-color);
-    border-top-color:var(--secondary-color) ;
-    border-radius: 50%;
-}
-
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -101,7 +73,7 @@ header {
 
 button {
     margin-left: 20px;
-    padding: 9px 25px;
+    padding: 5px 20px;
     background-color: transparent;
     border: 1px solid var(--secondary-color);
     border-radius: 50px;
@@ -150,6 +122,14 @@ button {
 
 /* project */
 
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 550px;
+}
+
 .title {
     display: flex;
     align-items: center;
@@ -162,6 +142,12 @@ button {
     margin-left: -10px;
 }
 
+.project__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
 .project__card {
     width: 100%;
     height: 450px;
@@ -170,7 +156,75 @@ button {
     margin-bottom: 100px;
     transition: 0.3s all ease;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    grid-column: span 4;
 }
+
+.about__card{
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+    grid-column: span 1;
+    display: none;
+}
+
+.about__card h1{
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.about__tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.about__tags button {
+    margin: 0;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+
+.about__tags h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.about__card p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.vl {
+    border: 2px solid var(--secondary-color);
+    height: 450px;
+    border-radius: 24px;
+    position: absolute;
+    left: 14%;
+}
+
+.about__card.inactive {
+    display: flex;
+    grid-column: span 2;
+}
+
+
+.project__card.active {
+    grid-column: span 2;
+}
+
 
 .project__card img {
     width: 100%;
