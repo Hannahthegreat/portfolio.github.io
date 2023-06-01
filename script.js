@@ -1,25 +1,25 @@
-const cards = document.querySelectorAll('.project__card, .about__card');
+gsap.registerPlugin(Flip);
+
+const cards = document.querySelectorAll('.card'),
+infos = document.querySelectorAll('.info');
 
 cards.forEach((card, index) => {
-    card.addEventListener("click", () =>{
-        // get state
+    card.addEventListener("click", () => {
         const state = Flip.getState(cards);
 
-        // add active class to the clicked card and add inactive to others
         const isCardActive = card.classList.contains("active");
         cards.forEach((otherCard, otherIdx) => {
             otherCard.classList.remove("active");
             otherCard.classList.remove("inactive");
-            if (!isCardActive && index !==otherIdx) {
+            if(!isCardActive && index !== otherIdx) {
                 otherCard.classList.add("inactive");
             }
         });
-        if (!isCardActive) card.classList.add("active");
+        if(!isCardActive) card.classList.add("active");
 
         Flip.from(state, {
             duration: 1,
-            ease: "power1.out",
-            
+            ease: "expo.out",
         });
     });
 });
